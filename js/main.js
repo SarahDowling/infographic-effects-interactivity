@@ -4,7 +4,8 @@
 // 2) add classes to the food circles and transition opacity in... make delay so one by one
 
 $('.kids').on('click', function () {
-  $('#second-protein-list').removeClass('unit-xs-hidden');
+  $('.circle-food').removeClass('circle-hide');
+  $('#protein-bubble').removeClass('protein-bubble-scale');
   $('.kids').removeClass('kids');
 });
 
