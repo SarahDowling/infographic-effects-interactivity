@@ -53,6 +53,10 @@ footer {
   background-color: #add9b0;
 }
 
+.kids{
+  transform: translate(220px, 0);
+}
+
 .bean {
   position: absolute;
   left: 5px;
@@ -60,12 +64,8 @@ footer {
   transition: all 1s linear;
 }
 
-.bean-move
-  animation: beananimation 1s linear forwards;
-}
-
-.kids {
-  transform: translate(50px, 100px);
+.bean-move {
+  animation: beananimation 1s ease;
 }
 
 @keyframes beananimation {
@@ -81,7 +81,7 @@ footer {
   }
 }
 
-.show-transition{
+.show-transition {
   opacity: 1;
   transition: all 1s linear;
 }
@@ -90,31 +90,31 @@ footer {
   transform: rotate(0);
 }
 
-.iron-man-animate{
-  animation: iron-man-keyframes 1s infinite ease;
-  /*transform-origin: ;*/
+.iron-man-animate {
+  animation: iron-man-keyframes 1s infinite linear;
+  transform-origin: 377px 120px;
 }
 
 @keyframes iron-man-keyframes {
 
   0% {
-    transform: rotate(0)
+    transform: rotate(0);
   }
 
   25% {
-    transform: rotate(30deg)
+    transform: rotate(15deg);
   }
 
   50% {
-    transform: rotate(0)
+    transform: rotate(0);
   }
 
-    75% {
-    transform: rotate(-30deg)
+  75% {
+    transform: rotate(-15deg);
   }
 
   100% {
-    transform: rotate(0)
+    transform: rotate(0);
   }
 }
 
