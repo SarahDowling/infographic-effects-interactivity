@@ -57,7 +57,7 @@ footer {
   transition: all 1.5s ease-in;
 }
 
-.kids{
+.kids {
   animation: kids-wiggle-keyframes 1s infinite ease;
   transform-origin: 57px 142px;
 }
@@ -111,7 +111,7 @@ footer {
 }
 
 .bean-move {
-  animation: beananimation 1s infinate linear;
+  animation: beananimation 1s linear;
 }
 
 @keyframes beananimation {
