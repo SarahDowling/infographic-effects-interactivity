@@ -60,10 +60,16 @@ $('#lentils-1').on('click', function () {
 // FOOTPRINT ANIMATION ---------------------------------------------
 
 $('#medium-meat-eaters').waypoint(function () {
-  $('#low-meat-line').removeClass('line-animation');
-  $('#heavy-meat-path').removeClass('line-animation');
-  $('#vegan-line').removeClass('line-animation');
-  $('#vegetarian-line').removeClass('line-animation');
-  $('#pescetarian-path').removeClass('line-animation');
-  $('#medium-meat-line').removeClass('line-animation');
-}, {offset: '20%'});
+  $('#low-meat-line').addClass('line-animation-add');
+  $('#heavy-meat-path').addClass('line-animation-add');
+  $('#vegan-line').addClass('line-animation-add');
+  $('#vegetarian-line').addClass('line-animation-add');
+  $('#pescetarian-path').addClass('line-animation-add');
+  $('#medium-meat-line').addClass('line-animation-add');
+  $('#low-meat-eaters').addClass('title-fade');
+  $('#heavy-meat').addClass('title-fade');
+  $('#vegans').addClass('title-fade');
+  $('#vegetarians').addClass('title-fade');
+  $('#pescetarian').addClass('title-fade');
+  $('#medium-meat-eaters').addClass('title-fade');
+}, {offset: '50%'});

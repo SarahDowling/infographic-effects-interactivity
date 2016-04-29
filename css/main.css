@@ -217,40 +217,39 @@ footer {
 
 /*-----------------------------------------------------FOOTPRINT ANIMATIONS------------------------------------------------------------*/
 
-#low-meat-eaters
-
-#heavy-meat
-
-#vegans
-
-#vegetarians
-
-#pescetarian
-
-#medium-meat-eaters
-
-#low-meat-line path, #heavy-meat-path path, #vegan-line path, #vegetarian-line path, #pescetarian-line path, #medium-meat-line path {
-  stroke-dasharray: 0, 480;
-  animation: line-drawing 1s ease-in;
+#low-meat-eaters, #heavy-meat, #vegans, #vegetarians, #pescetarian, #medium-meat-eaters {
+  opacity: 0;
+    transition: all 1s ease-in;
+  transition-delay: 5s;
 }
 
-@keyframes line-drawing {
-  0% {
-    stroke-dasharray: 0, 480;
-  }
+.title-fade {
+  opacity: 1;
+}
 
-  100% {
-    stroke-dasharray: 480, 480;
-  }
+#low-meat-line path, #heavy-meat-path path, #vegan-line path, #vegetarian-line path, #pescetarian-line path, #medium-meat-line path {
+  stroke-dasharray: 0, 400;
 }
 
 .line-animation path{
-  stroke-dasharray: 0, 480;
+  stroke-dasharray: 0, 400;
 }
 
-#low-meat-line path, #heavy-meat-path path, #vegan-line path, #vegetarian-line path, #pescetarian-line path, #medium-meat-line path {
+.line-animation-add {
+  animation: line-drawing 5s ease-in;
   transition-delay: 1s;
+
 }
+@keyframes line-drawing {
+  0% {
+    stroke-dasharray: 0, 400;
+  }
+
+  100% {
+    stroke-dasharray: 400, 400;
+  }
+}
+
 /*-----------------------------------------------------MEDIA QUERIES-----------------------------------------------------------------------*/
 
 @media only screen and (min-width: 35em) {
