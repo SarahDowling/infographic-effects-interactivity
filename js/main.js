@@ -5,6 +5,7 @@
 
 $('.kids').on('click', function () {
   $('#second-protein-list').removeClass('unit-xs-hidden');
+  $('.kids').removeClass('kids')
 });
 
 // listen for click on circle food

@@ -64,6 +64,10 @@ footer {
   animation: beananimation 1s linear forwards;
 }
 
+.kids {
+  transform: translate(50px,100px);
+}
+
 @keyframes beananimation {
 
   0% {
