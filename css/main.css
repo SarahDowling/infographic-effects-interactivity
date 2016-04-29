@@ -62,42 +62,43 @@ footer {
 }
 
 .svg-kids-stay {
-  transition: all 1.5s ease-in;
+  transition: all 1s ease-in;
   position: relative;
   left: 0;
 }
 
 .svg-kids {
   position: relative;
-  left: 40%;
+  left: calc(50% - (150% / 8));
 }
 
 .kids {
   animation: kids-wiggle-keyframes 3s infinite ease;
   transform-origin: 56px 148px;
   transform: translateX(40%);
+  cursor: pointer;
 }
 
 @keyframes kids-wiggle-keyframes {
 
   0% {
-    transform: translateY(0) scale(1.5, 1.5);
+    transform: translateY(0);
   }
 
   25% {
-    transform: translateY(60%) scale(1.5, 1.5);
+    transform: translateY(60%);
   }
 
   50% {
-    transform: translateY(0) scale(1.5, 1.5);
+    transform: translateY(0);
   }
 
   75% {
-    transform: translateY(60%) scale(1.5, 1.5);
+    transform: translateY(60%);
   }
 
   100% {
-    transform: translateY(0) scale(1.5, 1.5);
+    transform: translateY(0);
   }
 }
 
@@ -131,43 +132,58 @@ footer {
   transition: all 1s linear;
 }
 
+#soybeans.soy-position {
+  transform: translate(160px, -50px);
+}
+
 .bean-wiggle {
   animation: bean-wiggle-keyframes 1s infinite linear;
+  cursor: pointer;
+}
+
+.bean-wiggle-stay {
+  transform: translate(0, 0);
+  cursor: pointer;
 }
 
 @keyframes bean-wiggle-keyframes {
 
   0% {
-    transform: translate(160px, -50px);
+    transform: translateY(0px);
   }
 
   50% {
-    transform: translate(160px, -80px);
+    transform: translateY(-30px);
   }
 
   100% {
-    transform: translate(160px, -50px);
+    transform: translateY(0px);
   }
 }
 
 .kidney-position {
   transform: translate(60px, -93px);
+  cursor: pointer;
 }
 
 .swiss-position {
   transform: translate(10px, 10px);
+  cursor: pointer;
 }
 
 .lima-position {
   transform: translate(10px, 10px);
+  cursor: pointer;
 }
 
 .chick-position {
   transform: translate(10px, 10px);
+  cursor: pointer;
 }
 
 .lentil-position {
   transform: translate(-140px, -60px);
+  cursor: pointer;
 }
 
 .kidney-label {
@@ -252,10 +268,10 @@ footer {
 #low-meat-eaters, #heavy-meat, #vegans, #vegetarians, #pescetarian, #medium-meat-eaters {
   opacity: 0;
   transition: all 1s ease-in;
-  transition-delay: 5s;
+  transition-delay: 3s;
 }
 
-#low-meat-eaters.title-fade, #heavy-meat.title-fade {
+#low-meat-eaters.title-fade, #heavy-meat.title-fade, #vegans.title-fade, #vegetarians.title-fade, #pescetarian.title-fade, #medium-meat-eaters.title-fade{
   opacity: 1;
 }
 
@@ -302,35 +318,30 @@ footer {
   }
 
   .kids {
-    animation: kids-wiggle-keyframes-60 2s infinite linear;
-    transform-origin: 57px 142px;
+    animation-name: kids-wiggle-keyframes-2;
   }
 
 }
 
-@keyframes kids-wiggle-keyframes-60 {
+@keyframes kids-wiggle-keyframes-2 {
 
   0% {
-    transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
-  }
-
-  10% {
-    transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
+    transform: translateY(-20%);
   }
 
   25% {
-    transform: translate(80%, -30%) scale(1.5, 1.5) rotate(0);
+    transform: translateY(10%);
   }
 
   50% {
-    transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
+    transform: translateY(-20%);
   }
 
   75% {
-    transform: translate(80%, -30%) scale(1.5, 1.5) rotate(0);
+    transform: translateY(10%);
   }
 
   100% {
-    transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
+    transform: translateY(-20%);
   }
 }
