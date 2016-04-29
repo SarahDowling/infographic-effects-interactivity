@@ -113,6 +113,29 @@ footer {
   transition: all 1s linear;
 }
 
+#soybeans {
+  transform: translate(0, 0);
+  transition: all 1s linear;
+}
+
+.bean-wiggle {
+  animation: bean-wiggle-keyframes 1s infinite linear;
+}
+
+@keyframes bean-wiggle-keyframes {
+
+  0% {
+    transform: translate(160px, -50px);
+  }
+
+  50% {
+    transform: translate(160px, -80px);
+  }
+
+  100% {
+    transform: translate(160px, -50px);
+  }
+}
 
 .kidney-position {
   transform: translate(60px, -93px);
@@ -128,10 +151,6 @@ footer {
 
 .chick-position {
   transform: translate(10px, 10px);
-}
-
-.soy-position {
-  transform: translate(160px, -50px);
 }
 
 .lentil-position {

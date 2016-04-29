@@ -44,7 +44,7 @@ $('#chickpeas').on('click', function () {
 });
 
 $('#soybeans').on('click', function () {
-  $(this).removeClass('soy-position');
+  $(this).removeClass('bean-wiggle');
   $('.soy-label').removeClass('bean-label-hide');
 });
 
