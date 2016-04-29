@@ -215,6 +215,42 @@ footer {
   }
 }
 
+/*-----------------------------------------------------FOOTPRINT ANIMATIONS------------------------------------------------------------*/
+
+#low-meat-eaters
+
+#heavy-meat
+
+#vegans
+
+#vegetarians
+
+#pescetarian
+
+#medium-meat-eaters
+
+#low-meat-line path, #heavy-meat-path path, #vegan-line path, #vegetarian-line path, #pescetarian-line path, #medium-meat-line path {
+  stroke-dasharray: 0, 480;
+  animation: line-drawing 1s ease-in;
+}
+
+@keyframes line-drawing {
+  0% {
+    stroke-dasharray: 0, 480;
+  }
+
+  100% {
+    stroke-dasharray: 480, 480;
+  }
+}
+
+.line-animation path{
+  stroke-dasharray: 0, 480;
+}
+
+#low-meat-line path, #heavy-meat-path path, #vegan-line path, #vegetarian-line path, #pescetarian-line path, #medium-meat-line path {
+  transition-delay: 1s;
+}
 /*-----------------------------------------------------MEDIA QUERIES-----------------------------------------------------------------------*/
 
 @media only screen and (min-width: 35em) {

@@ -57,12 +57,30 @@ $('#lentils-1').on('click', function () {
   $('.lentil-label').removeClass('bean-label-hide');
 });
 
-// CARBON FOOTPRINT ANIMATION
-// waypoint the foot graph
-// for each of the lines, delay:
-// 	add class to make animation to the line
-//  	transition opacity of labels with a delay
-
-$('.circle-number').waypoint(function () {
-  $('this').addClass('circle-animate');
+$('.#medium-meat-eaters').waypoint(function () {
+  $('#low-meat-line').removeClass('line-animation');
+  $('#heavy-meat-path').removeClass('line-animation');
+  $('#vegan-line').removeClass('line-animation');
+  $('#vegetarian-line').removeClass('line-animation');
+  $('#escetarian-line').removeClass('line-animation');
+  $('#medium-meat-line').removeClass('line-animation');
 }, {offset: '90%'});
+
+
+#low-meat-eaters
+#low-meat-line
+
+#heavy-meat
+#heavy-meat-path
+
+#vegans
+#vegan-line
+
+#vegetarians
+#vegetarian-line
+
+#pescetarian
+#pescetarian-line
+
+#medium-meat-eaters
+#medium-meat-line
