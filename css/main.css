@@ -65,7 +65,7 @@ footer {
 }
 
 .kids {
-  transform: translate(50px,100px);
+  transform: translate(50px, 100px);
 }
 
 @keyframes beananimation {
@@ -92,7 +92,7 @@ footer {
 
 .iron-man-animate{
   animation: iron-man-keyframes 1s infinite ease;
-  transform-origin: ;
+  /*transform-origin: ;*/
 }
 
 @keyframes iron-man-keyframes {

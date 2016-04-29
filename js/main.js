@@ -5,7 +5,7 @@
 
 $('.kids').on('click', function () {
   $('#second-protein-list').removeClass('unit-xs-hidden');
-  $('.kids').removeClass('kids')
+  $('.kids').removeClass('kids');
 });
 
 // listen for click on circle food
@@ -15,16 +15,14 @@ $('.circle-food').on('click', function () {
   $('circle-label').addClass('show-transition');
 });
 
-
 // click add remove animation class from the dude
 // remove animation class from the dude
 //  add class opacity plus transition
 
-$('#iron-man').on('mouseover', function() {
+$('#iron-man').on('mouseover', function () {
   $(this).removeClass('iron-man-animate');
   $('#hey-bubble').removeClass('unit-xs-hidden');
 });
-
 
 // listen for click on the bean
 // add class to animate bean to new position
@@ -40,6 +38,6 @@ $('.bean').on('click', function () {
 // 	add class to make animation to the line
 //  	transition opacity of labels with a delay
 
-$('.circle-number').waypoint(function() {
+$('.circle-number').waypoint(function () {
   $('this').addClass('circle-animate');
-}, { offset: '5%'});
+}, {offset: '5%'});
