@@ -55,7 +55,7 @@ footer {
   background-color: #add9b0;
 }
 
-/*-----------------------------------------------------TOP ANIMATIONS----------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------KID ANIMATIONS----------------------------------------------------------------------------------------*/
 
 #hey-bubble {
   transition: all 1.5s ease-in;
@@ -69,23 +69,23 @@ footer {
 @keyframes kids-wiggle-keyframes {
 
   0% {
-    transform: translate(160px, 60px) scale(1.5, 1.5) rotate(0);
+    transform: translate(0, 0) scale(1.5, 1.5) rotate(0);
   }
 
   25% {
-    transform: translate(160px, 60px) scale(1.5, 1.5) rotate(15deg);
+    transform: translate(0, 0) scale(1.5, 1.5) rotate(15deg);
   }
 
   50% {
-    transform: translate(160px, 60px) scale(1.5, 1.5) rotate(0);
+    transform: translate(0, 0) scale(1.5, 1.5) rotate(0);
   }
 
   75% {
-    transform: translate(160px, 60px) scale(1.5, 1.5) rotate(-15deg);
+    transform: translate(0, 0) scale(1.5, 1.5) rotate(-15deg);
   }
 
   100% {
-    transform: translate(160px, 60px) scale(1.5, 1.5) rotate(0);
+    transform: translate(0, 0) scale(1.5, 1.5) rotate(0);
   }
 }
 
@@ -252,37 +252,6 @@ footer {
 
 /*-----------------------------------------------------MEDIA QUERIES-----------------------------------------------------------------------*/
 
-@media only screen and (min-width: 35em) {
-
-  .kids {
-    animation: kids-wiggle-keyframes 1s infinite ease;
-    transform-origin: 57px 142px;
-  }
-
-  @keyframes kids-wiggle-keyframes {
-
-    0% {
-      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
-    }
-
-    25% {
-      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(15deg);
-    }
-
-    50% {
-      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
-    }
-
-    75% {
-      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(-15deg);
-    }
-
-    100% {
-      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
-    }
-  }
-}
-
 
 @media only screen and (min-width: 60em) {
 
@@ -303,33 +272,32 @@ footer {
   .carbon {
     padding-right: 10%;
   }
-}
 
   .kids {
-    animation: kids-wiggle-keyframes 1s infinite ease;
+    animation: kids-wiggle-keyframes 1.5s infinite linear;
     transform-origin: 57px 142px;
   }
 
   @keyframes kids-wiggle-keyframes {
 
     0% {
-      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
+      transform: translate(50%, 20%) scale(1.5, 1.5) rotate(0);
     }
 
     25% {
-      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(15deg);
+      transform: translate(50%, -20%) scale(1.5, 1.5) rotate(0);
     }
 
     50% {
-      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
+      transform: translate(50%, 20%) scale(1.5, 1.5) rotate(0);
     }
 
     75% {
-      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(-15deg);
+      transform: translate(50%, -20%) scale(1.5, 1.5) rotate(0);
     }
 
     100% {
-      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
+      transform: translate(50%, 20%) scale(1.5, 1.5) rotate(0);
     }
   }
 
