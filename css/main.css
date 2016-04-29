@@ -274,11 +274,11 @@ footer {
   }
 
   .kids {
-    animation: kids-wiggle-keyframes 1.5s infinite linear;
+    animation: kids-wiggle-keyframes-60 1.5s infinite linear;
     transform-origin: 57px 142px;
   }
 
-  @keyframes kids-wiggle-keyframes {
+  @keyframes kids-wiggle-keyframes-60 {
 
     0% {
       transform: translate(50%, 20%) scale(1.5, 1.5) rotate(0);
