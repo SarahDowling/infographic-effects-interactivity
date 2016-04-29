@@ -14,10 +14,6 @@ $('.circle-food').on('click', function () {
   $('circle-label').addClass('show-transition');
 });
 
-// click add remove animation class from the dude
-// remove animation class from the dude
-//  add class opacity plus transition
-
 // IRON MAN ANIMATION ---------------------------------------------
 
 $('#iron-man').on('mouseover', function () {
