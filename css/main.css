@@ -62,30 +62,30 @@ footer {
 }
 
 .kids {
-  animation: kids-wiggle-keyframes 1s infinite ease;
+  animation: kids-wiggle-keyframes 3s infinite ease;
   transform-origin: 56px 148px;
 }
 
 @keyframes kids-wiggle-keyframes {
 
   0% {
-    transform: translate(0, 0) scale(1.5, 1.5) rotate(0);
+    transform: translate(40%, 0) scale(1.5, 1.5);
   }
 
   25% {
-    transform: translate(0, 0) scale(1.5, 1.5) rotate(15deg);
+    transform: translate(40%, 60%) scale(1.5, 1.5);
   }
 
   50% {
-    transform: translate(0, 0) scale(1.5, 1.5) rotate(0);
+    transform: translate(40%, 0) scale(1.5, 1.5);
   }
 
   75% {
-    transform: translate(0, 0) scale(1.5, 1.5) rotate(-15deg);
+    transform: translate(40%, 60%) scale(1.5, 1.5);
   }
 
   100% {
-    transform: translate(0, 0) scale(1.5, 1.5) rotate(0);
+    transform: translate(40%, 0) scale(1.5, 1.5);
   }
 }
 
@@ -252,7 +252,6 @@ footer {
 
 /*-----------------------------------------------------MEDIA QUERIES-----------------------------------------------------------------------*/
 
-
 @media only screen and (min-width: 60em) {
 
   .protein-2 {
@@ -274,30 +273,34 @@ footer {
   }
 
   .kids {
-    animation: kids-wiggle-keyframes-60 1.5s infinite linear;
+    animation: kids-wiggle-keyframes-60 2s infinite linear;
     transform-origin: 57px 142px;
   }
 
   @keyframes kids-wiggle-keyframes-60 {
 
     0% {
-      transform: translate(50%, 20%) scale(1.5, 1.5) rotate(0);
+      transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
+    }
+
+    10% {
+      transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
     }
 
     25% {
-      transform: translate(50%, -20%) scale(1.5, 1.5) rotate(0);
+      transform: translate(80%, -30%) scale(1.5, 1.5) rotate(0);
     }
 
     50% {
-      transform: translate(50%, 20%) scale(1.5, 1.5) rotate(0);
+      transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
     }
 
     75% {
-      transform: translate(50%, -20%) scale(1.5, 1.5) rotate(0);
+      transform: translate(80%, -30%) scale(1.5, 1.5) rotate(0);
     }
 
     100% {
-      transform: translate(50%, 20%) scale(1.5, 1.5) rotate(0);
+      transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
     }
   }
 
