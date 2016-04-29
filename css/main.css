@@ -63,7 +63,7 @@ footer {
 
 .kids {
   animation: kids-wiggle-keyframes 1s infinite ease;
-  transform-origin: 57px 142px;
+  transform-origin: 56px 148px;
 }
 
 @keyframes kids-wiggle-keyframes {
@@ -335,3 +335,21 @@ footer {
   }
 
 }
+
+/*#low-meat-eaters
+#low-meat-line
+
+#heavy-meat
+#heavy-meat-path
+
+#vegans
+#vegan-line
+
+#vegetarians
+#vegetarian-line
+
+#pescetarian
+#pescetarian-line
+
+#medium-meat-eaters
+#medium-meat-line*/

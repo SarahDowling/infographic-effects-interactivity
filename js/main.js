@@ -18,14 +18,14 @@ $('.circle-food').on('click', function () {
 // remove animation class from the dude
 //  add class opacity plus transition
 
-// IRON MAN ANIMATION
+// IRON MAN ANIMATION ---------------------------------------------
 
 $('#iron-man').on('mouseover', function () {
   $(this).removeClass('iron-man-animate');
   $('#hey-bubble').removeClass('unit-xs-hidden');
 });
 
-// BEAN ANIMATION
+// BEAN ANIMATION ---------------------------------------------
 
 $('#kidney-beans').on('click', function () {
   $('.kidney-position').removeClass('kidney-position');
@@ -57,30 +57,13 @@ $('#lentils-1').on('click', function () {
   $('.lentil-label').removeClass('bean-label-hide');
 });
 
-$('.#medium-meat-eaters').waypoint(function () {
+// FOOTPRINT ANIMATION ---------------------------------------------
+
+$('#medium-meat-eaters').waypoint(function () {
   $('#low-meat-line').removeClass('line-animation');
   $('#heavy-meat-path').removeClass('line-animation');
   $('#vegan-line').removeClass('line-animation');
   $('#vegetarian-line').removeClass('line-animation');
-  $('#escetarian-line').removeClass('line-animation');
+  $('#pescetarian-path').removeClass('line-animation');
   $('#medium-meat-line').removeClass('line-animation');
-}, {offset: '90%'});
-
-
-#low-meat-eaters
-#low-meat-line
-
-#heavy-meat
-#heavy-meat-path
-
-#vegans
-#vegan-line
-
-#vegetarians
-#vegetarian-line
-
-#pescetarian
-#pescetarian-line
-
-#medium-meat-eaters
-#medium-meat-line
+}, {offset: '20%'});
