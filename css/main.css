@@ -149,7 +149,7 @@ footer {
 @keyframes bean-wiggle-keyframes {
 
   0% {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 
   50% {
@@ -157,7 +157,7 @@ footer {
   }
 
   100% {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }
 
@@ -271,7 +271,7 @@ footer {
   transition-delay: 3s;
 }
 
-#low-meat-eaters.title-fade, #heavy-meat.title-fade, #vegans.title-fade, #vegetarians.title-fade, #pescetarian.title-fade, #medium-meat-eaters.title-fade{
+#low-meat-eaters.title-fade, #heavy-meat.title-fade, #vegans.title-fade, #vegetarians.title-fade, #pescetarian.title-fade, #medium-meat-eaters.title-fade {
   opacity: 1;
 }
 
