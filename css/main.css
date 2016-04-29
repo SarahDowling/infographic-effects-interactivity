@@ -65,23 +65,23 @@ footer {
 @keyframes kids-wiggle-keyframes {
 
   0% {
-    transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
+    transform: translate(160px, 60px) scale(1.5, 1.5) rotate(0);
   }
 
   25% {
-    transform: translate(280px, -100px) scale(1.5, 1.5) rotate(15deg);
+    transform: translate(160px, 60px) scale(1.5, 1.5) rotate(15deg);
   }
 
   50% {
-    transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
+    transform: translate(160px, 60px) scale(1.5, 1.5) rotate(0);
   }
 
   75% {
-    transform: translate(280px, -100px) scale(1.5, 1.5) rotate(-15deg);
+    transform: translate(160px, 60px) scale(1.5, 1.5) rotate(-15deg);
   }
 
   100% {
-    transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
+    transform: translate(160px, 60px) scale(1.5, 1.5) rotate(0);
   }
 }
 
@@ -104,27 +104,60 @@ footer {
 }
 
 .bean {
-  position: absolute;
-  left: 5px;
-  top: 5px;
   transition: all 1s linear;
 }
 
-.bean-move {
-  animation: beananimation 1s linear;
+
+.kidney-position {
+  transform: translate(10px, 10px);
 }
 
-@keyframes beananimation {
+.swiss-position {
+  transform: translate(10px, 10px);
+}
 
-  0% {
-    left: 5px;
-    top: 5px;
-  }
+.lima-position {
+  transform: translate(10px, 10px);
+}
 
-  100% {
-    left: 78px;
-    top: 78px;
-  }
+.chick-position {
+  transform: translate(10px, 10px);
+}
+
+.soy-position {
+  transform: translate(10px, 10px);
+}
+
+.lentil-position {
+  transform: translate(10px, 10px);
+}
+
+.kidney-label {
+  opacity: 1;
+}
+
+.swiss-label {
+  opacity: 1;
+}
+
+.lima-label {
+  opacity: 1;
+}
+
+.chick-label {
+  opacity: 1;
+}
+
+.soy-label {
+  opacity: 1;
+}
+
+.lentil-label {
+  opacity: 1;
+}
+
+.bean-label-hide {
+  opacity: 0;
 }
 
 .show-transition {
@@ -164,6 +197,38 @@ footer {
   }
 }
 
+@media only screen and (min-width: 35em) {
+
+  .kids {
+    animation: kids-wiggle-keyframes 1s infinite ease;
+    transform-origin: 57px 142px;
+  }
+
+  @keyframes kids-wiggle-keyframes {
+
+    0% {
+      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
+    }
+
+    25% {
+      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(15deg);
+    }
+
+    50% {
+      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
+    }
+
+    75% {
+      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(-15deg);
+    }
+
+    100% {
+      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
+    }
+  }
+}
+
+
 @media only screen and (min-width: 60em) {
 
   .protein-2 {
@@ -183,4 +248,34 @@ footer {
   .carbon {
     padding-right: 10%;
   }
+}
+
+  .kids {
+    animation: kids-wiggle-keyframes 1s infinite ease;
+    transform-origin: 57px 142px;
+  }
+
+  @keyframes kids-wiggle-keyframes {
+
+    0% {
+      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
+    }
+
+    25% {
+      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(15deg);
+    }
+
+    50% {
+      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
+    }
+
+    75% {
+      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(-15deg);
+    }
+
+    100% {
+      transform: translate(280px, -100px) scale(1.5, 1.5) rotate(0);
+    }
+  }
+
 }

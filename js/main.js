@@ -26,9 +26,34 @@ $('#iron-man').on('mouseover', function () {
 // add class to animate bean to new position
 // add class to animate slide of label and transition opacity
 
-$('.bean').on('click', function () {
-  $('this').aremoClass('bean-move');
-  $('this').removeClass('bean');
+$('#kidney-beans').on('click', function () {
+  $('.kidney-position').removeClass('.kidney-position');
+  $('.kidney-label').removeClass('.bean-label-hide');
+});
+
+$('#swiss-chard').on('click', function () {
+  $(this).removeClass('.swiss-position');
+  $('.swiss-label').removeClass('.bean-label-hide');
+});
+
+$('#lima-beans').on('click', function () {
+  $(this).removeClass('.lima-position');
+  $('.lima-label').removeClass('.bean-label-hide');
+});
+
+$('#chickpeas').on('click', function () {
+  $(this).removeClass('.chick-position');
+  $('.chick-label').removeClass('.bean-label-hide');
+});
+
+$('#soybeans').on('click', function () {
+  $(this).removeClass('.soy-position');
+  $('.soy-label').removeClass('.bean-label-hide');
+});
+
+$('#lentils-1').on('click', function () {
+  $(this).removeClass('.lentil-position');
+  $('.lentil-label').removeClass('.bean-label-hide');
 });
 
 // waypoint the foot graph
