@@ -1,3 +1,4 @@
+// PROTEIN ANIMATION
 // 2) add classes to the food circles and transition opacity in... make delay so one by one
 
 $('.kids').on('click', function () {
@@ -17,14 +18,14 @@ $('.circle-food').on('click', function () {
 // remove animation class from the dude
 //  add class opacity plus transition
 
+// IRON MAN ANIMATION
+
 $('#iron-man').on('mouseover', function () {
   $(this).removeClass('iron-man-animate');
   $('#hey-bubble').removeClass('unit-xs-hidden');
 });
 
-// listen for click on the bean
-// add class to animate bean to new position
-// add class to animate slide of label and transition opacity
+// BEAN ANIMATION
 
 $('#kidney-beans').on('click', function () {
   $('.kidney-position').removeClass('kidney-position');
@@ -56,6 +57,7 @@ $('#lentils-1').on('click', function () {
   $('.lentil-label').removeClass('bean-label-hide');
 });
 
+// CARBON FOOTPRINT ANIMATION
 // waypoint the foot graph
 // for each of the lines, delay:
 // 	add class to make animation to the line
@@ -63,4 +65,4 @@ $('#lentils-1').on('click', function () {
 
 $('.circle-number').waypoint(function () {
   $('this').addClass('circle-animate');
-}, {offset: '5%'});
+}, {offset: '90%'});
