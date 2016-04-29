@@ -27,33 +27,33 @@ $('#iron-man').on('mouseover', function () {
 // add class to animate slide of label and transition opacity
 
 $('#kidney-beans').on('click', function () {
-  $('.kidney-position').removeClass('.kidney-position');
-  $('.kidney-label').removeClass('.bean-label-hide');
+  $('.kidney-position').removeClass('kidney-position');
+  $('.kidney-label').removeClass('bean-label-hide');
 });
 
 $('#swiss-chard').on('click', function () {
-  $(this).removeClass('.swiss-position');
-  $('.swiss-label').removeClass('.bean-label-hide');
+  $(this).removeClass('swiss-position');
+  $('.swiss-label').removeClass('bean-label-hide');
 });
 
 $('#lima-beans').on('click', function () {
-  $(this).removeClass('.lima-position');
-  $('.lima-label').removeClass('.bean-label-hide');
+  $(this).removeClass('lima-position');
+  $('.lima-label').removeClass('bean-label-hide');
 });
 
 $('#chickpeas').on('click', function () {
-  $(this).removeClass('.chick-position');
-  $('.chick-label').removeClass('.bean-label-hide');
+  $(this).removeClass('chick-position');
+  $('.chick-label').removeClass('bean-label-hide');
 });
 
 $('#soybeans').on('click', function () {
-  $(this).removeClass('.soy-position');
-  $('.soy-label').removeClass('.bean-label-hide');
+  $(this).removeClass('soy-position');
+  $('.soy-label').removeClass('bean-label-hide');
 });
 
 $('#lentils-1').on('click', function () {
-  $(this).removeClass('.lentil-position');
-  $('.lentil-label').removeClass('.bean-label-hide');
+  $(this).removeClass('lentil-position');
+  $('.lentil-label').removeClass('bean-label-hide');
 });
 
 // waypoint the foot graph

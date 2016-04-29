@@ -109,7 +109,7 @@ footer {
 
 
 .kidney-position {
-  transform: translate(10px, 10px);
+  transform: translate(60px, -93px);
 }
 
 .swiss-position {
@@ -125,35 +125,47 @@ footer {
 }
 
 .soy-position {
-  transform: translate(10px, 10px);
+  transform: translate(160px, -50px);
 }
 
 .lentil-position {
-  transform: translate(10px, 10px);
+  transform: translate(-140px, -60px);
 }
 
 .kidney-label {
   opacity: 1;
+  transition: all 1s linear;
+  transition-delay: 1s;
 }
 
 .swiss-label {
   opacity: 1;
+  transition: all 1s linear;
+  transition-delay: 1s;
 }
 
 .lima-label {
   opacity: 1;
+  transition: all 1s linear;
+  transition-delay: 1s;
 }
 
 .chick-label {
   opacity: 1;
+  transition: all 1s linear;
+  transition-delay: 1s;
 }
 
 .soy-label {
   opacity: 1;
+  transition: all 1s linear;
+  transition-delay: 1s;
 }
 
 .lentil-label {
   opacity: 1;
+  transition: all 1s linear;
+  transition-delay: 1s;
 }
 
 .bean-label-hide {
