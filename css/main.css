@@ -231,15 +231,15 @@ footer {
   stroke-dasharray: 0, 400;
 }
 
-.line-animation path{
+.line-animation path {
   stroke-dasharray: 0, 400;
 }
 
 .line-animation-add {
   animation: line-drawing 5s ease-in;
   transition-delay: 1s;
-
 }
+
 @keyframes line-drawing {
   0% {
     stroke-dasharray: 0, 400;
