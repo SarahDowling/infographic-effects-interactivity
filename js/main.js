@@ -5,6 +5,7 @@ $('.kids').on('click', function () {
   $('.circle-food').removeClass('circle-hide');
   $('#protein-bubble').removeClass('protein-bubble-scale');
   $('.kids').removeClass('kids');
+  $('.svg-kids-stay').removeClass('svg-kids');
 });
 
 // listen for click on circle food
@@ -55,7 +56,7 @@ $('#lentils-1').on('click', function () {
 
 // FOOTPRINT ANIMATION ---------------------------------------------
 
-$('#medium-meat-eaters').waypoint(function () {
+$('.waypoint-marker').waypoint(function () {
   $('#low-meat-line').addClass('line-animation-add');
   $('#heavy-meat-path').addClass('line-animation-add');
   $('#vegan-line').addClass('line-animation-add');
@@ -68,4 +69,4 @@ $('#medium-meat-eaters').waypoint(function () {
   $('#vegetarians').addClass('title-fade');
   $('#pescetarian').addClass('title-fade');
   $('#medium-meat-eaters').addClass('title-fade');
-}, {offset: '50%'});
+}, {offset: 'bottom-in-view'});

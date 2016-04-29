@@ -17,7 +17,7 @@ html {
   box-sizing: inherit;
 }
 
-/*-----------------------------------------------------MAIN CONTENT---------------------------------------------------*/
+/* -----------------------------------------------------MAIN CONTENT--------------------------------------------------- */
 
 body {
   background-color: #f7faee;
@@ -61,36 +61,49 @@ footer {
   transition: all 1.5s ease-in;
 }
 
+.svg-kids-stay {
+  transition: all 1.5s ease-in;
+  position: relative;
+  left: 0;
+}
+
+.svg-kids {
+  position: relative;
+  left: 40%;
+}
+
 .kids {
   animation: kids-wiggle-keyframes 3s infinite ease;
   transform-origin: 56px 148px;
+  transform: translateX(40%);
 }
 
 @keyframes kids-wiggle-keyframes {
 
   0% {
-    transform: translate(40%, 0) scale(1.5, 1.5);
+    transform: translateY(0) scale(1.5, 1.5);
   }
 
   25% {
-    transform: translate(40%, 60%) scale(1.5, 1.5);
+    transform: translateY(60%) scale(1.5, 1.5);
   }
 
   50% {
-    transform: translate(40%, 0) scale(1.5, 1.5);
+    transform: translateY(0) scale(1.5, 1.5);
   }
 
   75% {
-    transform: translate(40%, 60%) scale(1.5, 1.5);
+    transform: translateY(60%) scale(1.5, 1.5);
   }
 
   100% {
-    transform: translate(40%, 0) scale(1.5, 1.5);
+    transform: translateY(0) scale(1.5, 1.5);
   }
 }
 
 .kids-animate, .protein-bubble-animate {
   transition: all 1.5s ease-in;
+  transform: translateX(0);
 }
 
 .protein-bubble-scale {
@@ -242,20 +255,16 @@ footer {
   transition-delay: 5s;
 }
 
-.title-fade {
+#low-meat-eaters.title-fade, #heavy-meat.title-fade {
   opacity: 1;
 }
 
-#low-meat-line path, #heavy-meat-path path, #vegan-line path, #vegetarian-line path, #pescetarian-line path, #medium-meat-line path {
-  stroke-dasharray: 0, 400;
-}
-
-.line-animation path {
+#low-meat-line,  #heavy-meat-path,  #vegan-line,  #vegetarian-line,  #pescetarian-path,  #medium-meat-line {
   stroke-dasharray: 0, 400;
 }
 
 .line-animation-add {
-  animation: line-drawing 5s ease-in;
+  animation: line-drawing 5s ease-in forwards;
   transition-delay: 1s;
 }
 
@@ -296,49 +305,31 @@ footer {
     transform-origin: 57px 142px;
   }
 
-  @keyframes kids-wiggle-keyframes-60 {
-
-    0% {
-      transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
-    }
-
-    10% {
-      transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
-    }
-
-    25% {
-      transform: translate(80%, -30%) scale(1.5, 1.5) rotate(0);
-    }
-
-    50% {
-      transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
-    }
-
-    75% {
-      transform: translate(80%, -30%) scale(1.5, 1.5) rotate(0);
-    }
-
-    100% {
-      transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
-    }
-  }
-
 }
 
-/*#low-meat-eaters
-#low-meat-line
+@keyframes kids-wiggle-keyframes-60 {
 
-#heavy-meat
-#heavy-meat-path
+  0% {
+    transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
+  }
 
-#vegans
-#vegan-line
+  10% {
+    transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
+  }
 
-#vegetarians
-#vegetarian-line
+  25% {
+    transform: translate(80%, -30%) scale(1.5, 1.5) rotate(0);
+  }
 
-#pescetarian
-#pescetarian-line
+  50% {
+    transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
+  }
 
-#medium-meat-eaters
-#medium-meat-line*/
+  75% {
+    transform: translate(80%, -30%) scale(1.5, 1.5) rotate(0);
+  }
+
+  100% {
+    transform: translate(80%, -10%) scale(1.5, 1.5) rotate(0);
+  }
+}
